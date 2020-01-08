@@ -2,7 +2,7 @@
 {% block title %}Fyyur | Artists Search{% endblock %}
 {% block content %}
 <h3>Number of search results for "{{ search_term }}": {{ results.count }}</h3>
-<ul class="items">
+<ul class="items artist">
 	{% for artist in results.data %}
 	<li>
 		<a href="/artists/{{ artist.id }}">
@@ -11,6 +11,7 @@
 				<h5>{{ artist.name }}</h5>
 			</div>
 		</a>
+		<a href="/artists/{{ artist.id }}/edit"><button class="btn btn-default btn-lg">Edit Artist</button></a>
 	</li>
 	{% endfor %}
 </ul>

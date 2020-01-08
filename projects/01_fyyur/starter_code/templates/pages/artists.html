@@ -1,7 +1,7 @@
 {% extends 'layouts/main.html' %}
 {% block title %}Fyyur | Artists{% endblock %}
 {% block content %}
-<ul class="items">
+<ul class="items artist">
 	{% for artist in artists %}
 	<li>
 		<a href="/artists/{{ artist.id }}">
@@ -10,6 +10,7 @@
 				<h5>{{ artist.name }}</h5>
 			</div>
 		</a>
+		<a href="/artists/{{ artist.id }}/edit"><button class="btn btn-default btn-lg">Edit Artist</button></a>
 	</li>
 	{% endfor %}
 </ul>

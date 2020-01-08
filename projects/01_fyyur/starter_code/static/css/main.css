@@ -209,3 +209,18 @@ h2.monospace {
 .subtitle {
   opacity: 0.5;
 }
+
+/*newly added css*/
+.items.venue > li > a{
+  display: inline-flex;
+}
+
+.items.venue > li > a.venue
+{
+  width: 35%;
+}
+
+.items.artist > li > a{
+  display: inline-flex;
+}
+/*newly added css*/
